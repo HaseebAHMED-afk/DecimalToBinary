@@ -2,6 +2,7 @@ import './App.css';
 import { Button } from '@material-ui/core';
 import TextField  from '@material-ui/core/TextField';
 import { useState } from 'react';
+import ConverterFunction from './Utils/ConverterFunction'
 
 function App() {
 
@@ -15,7 +16,7 @@ function App() {
   }
 
   const handleClick = () =>{
-    console.log(num);
+    console.log(ConverterFunction(num));
   }
 
   return (
